@@ -45,7 +45,7 @@
         "description": "There is a plant seed on its back right from the days this Pokémon is a bom. The seed slowly grows larger",
         "stats": {
             "hp": 45,
-            "atx": 49,
+            "atk": 49,
             "def": 49,
             "satk": 65,
             "sdef": 65,
@@ -62,7 +62,7 @@
         "description": "In battle, it flaps its wings at great speed to release highly toxic dust into the air",
         "stats": {
             "hp": 60,
-            "atx": 45,
+            "atk": 45,
             "def": 50,
             "satk": 90,
             "sdef": 80,
@@ -79,13 +79,97 @@
         "description": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail. ",
         "stats": {
             "hp": 39,
-            "atx": 52,
+            "atk": 52,
             "def": 43,
             "satk": 60,
             "sdef": 50,
             "spd": 65
         }
+    },
+    {
+      "name": "Ditto",
+      "number": "#132",
+      "types": ["Normal"],
+      "weight": 4.0,
+      "height": 0.3,
+      "moves": ["Limber","Imposter"],
+      "description": "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes ",
+      "stats": {
+          "hp": 48,
+          "atk": 48,
+          "def": 48,
+          "satk": 48,
+          "sdef": 48,
+          "spd": 48
+      }
+  },
+  {
+    "name": "Gastly",
+    "number": "#092",
+    "types": ["Ghost", "Type"],
+    "weight": 0.1,
+    "height": 1.3,
+    "moves": ["Levitate"],
+    "description": " Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison ",
+    "stats": {
+        "hp": 30,
+        "atk": 35,
+        "def": 30,
+        "satk": 100,
+        "sdef": 35,
+        "spd": 80
     }
-]
+},
+{
+  "name": "Mew",
+  "number": "#152",
+  "types": ["Psychic"],
+  "weight": 4.0,
+  "height": 0.4,
+  "moves": ["Sinchronize"],
+  "description": " When viwed through a microscope, the Pokémon's short line, delicate hair can be seen. ",
+  "stats": {
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "satk": 100,
+      "sdef": 100,
+      "spd": 100
+  }
+},
+{
+  "name": "Pikachu",
+  "number": "#025",
+  "types": ["Electric"],
+  "weight": 6.0,
+  "height": 0.4,
+  "moves": ["Mega-Punch","Pay-Day"],
+  "description": " Pikachu that can generate powerfull electricity have cheek sacs that are extra soft and super stretchy. ",
+  "stats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "satk": 50,
+      "sdef": 50,
+      "spd": 90
+  }
+},
 
-}
+  {
+    "name": "Squirtle",
+    "number": "#007",
+    "types": ["Water"],
+    "weight": 9.0,
+    "height": 0.5,
+    "moves": ["Torrent","Rain-Dish"],
+    "description": " When it retracts its long neck into its shell, it squirts out water with vigorous force. ",
+    "stats": {
+        "hp": 44,
+        "atk": 48,
+        "def": 65,
+        "satk": 50,
+        "sdef": 64,
+        "spd": 43
+    }
+  }
+]
