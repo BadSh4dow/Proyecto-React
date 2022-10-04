@@ -1,0 +1,91 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  
+  "pokemons":[
+    {
+        "name": "Aron",
+        "number": "#304",
+        "types": ["Steel","Rock"],
+        "weight": 60.0,
+        "height": 0.4,
+        "moves": ["Strudy","Rock-Head"],
+        "description": "It eats iron ore - and sometimes railroad tracks - to build up the steel armor that protects its body",
+        "stats": {
+            "hp": 50,
+            "atx": 70,
+            "def": 100,
+            "satk": 40,
+            "sdef": 40,
+            "spd": 30
+        }
+    },
+    {
+        "name": "Bulbasaur",
+        "number": "#001",
+        "types": ["Grass","Poison"],
+        "weight": 6.9,
+        "height": 0.7,
+        "moves": ["Chiorophyll", "Overgrow"],
+        "description": "There is a plant seed on its back right from the days this Pokémon is a bom. The seed slowly grows larger",
+        "stats": {
+            "hp": 45,
+            "atx": 49,
+            "def": 49,
+            "satk": 65,
+            "sdef": 65,
+            "spd": 45
+        }
+    },
+    {
+        "name": "Butterfree",
+        "number": "#012",
+        "types": ["Bug","Flying"],
+        "weight": 32.0,
+        "height": 1.1,
+        "moves": ["Compound-Eyes","Tinted-Lens"],
+        "description": "In battle, it flaps its wings at great speed to release highly toxic dust into the air",
+        "stats": {
+            "hp": 60,
+            "atx": 45,
+            "def": 50,
+            "satk": 90,
+            "sdef": 80,
+            "spd": 70
+        }
+    },
+    {
+        "name": "Charmander",
+        "number": "#004",
+        "types": ["Fire"],
+        "weight": 8.5,
+        "height": 0.6,
+        "moves": ["Mega-Punch","Fire-Punch"],
+        "description": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail. ",
+        "stats": {
+            "hp": 39,
+            "atx": 52,
+            "def": 43,
+            "satk": 60,
+            "sdef": 50,
+            "spd": 65
+        }
+    }
+]
+
+}
