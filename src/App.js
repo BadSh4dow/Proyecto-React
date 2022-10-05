@@ -1,4 +1,6 @@
+import React from 'react';
 import './App.css';
+import PokemonGrid from './PokemonGrid/PokemonGrid';
 
 function App() {
   return (
@@ -8,7 +10,7 @@ function App() {
           <img src ="/Iconos-imagenes/Pokeball.png"/>
         </div>
 
-        <h1>Pokedex</h1>
+        <h1>Pokédex</h1>
 
         <div className="searchBar">
           Buscador
@@ -20,11 +22,7 @@ function App() {
         </div>
 
       </nav>
-    
-      <div className="pokemonView">
-        grilla
-      </div>
-
+      <PokemonGrid/>
     </main>
   
   );
