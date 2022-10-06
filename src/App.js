@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import PokemonGrid from './COMPONENTS/PokemonGrid/PokemonGrid';
+import SearchBar from './COMPONENTS/SearchBar/SearchBar';
 
 function App() {
   return (
@@ -13,12 +14,12 @@ function App() {
         <h1>Pokédex</h1>
 
         <div className="searchBar">
-          Buscador
+          <SearchBar/>
         </div>
 
         <div className= "arrowFilter">
           <span>#</span> 
-          <img src="/Iconos-imagenes/Arrow.svg"/>
+            <img src="/Iconos-imagenes/Arrow.svg"/>
         </div>
 
       </nav>

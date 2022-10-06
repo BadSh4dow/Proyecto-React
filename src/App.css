@@ -13,7 +13,7 @@ main{
   grid-template-rows: 70% 30%;
   width: 100%;
   height: 11%;
-  background-color: pink;
+  background-color: white;
 }
 .pokeball{
   grid-area: pokeball;
@@ -122,5 +122,16 @@ h1{
   grid-template-rows: 12% 68% 20%;
   border: 1px solid green;
   border-radius: 10px;
+
+}
+
+
+/* SearchBar - Input */
+
+.input{
+  width: 340px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  text-align: center;
 
 }
