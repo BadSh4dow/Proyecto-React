@@ -54,8 +54,39 @@ h1{
     display: grid;
     grid-template-columns: 1fr  1fr 1fr;
     grid-template-rows: 1fr 1fr  1fr;
-    height: 80%;
+    height: 60%;
     width: 100%;
-    background-color: green;
+    background-color: white;
   }
+
+  /*Banco de Pokemons*/
+.containerBulbasaur{
+display: grid;
+grid-template-areas: 
+'bulbasaur'
+'bulbasaurTXT';
+grid-template-columns: 1fr;
+grid-template-rows: 80% 20%;
+border: 1px solid green;
+border-radius: 10px;
+
+}
+.bulbasaurGrid{
+  grid-area: bulbasaur;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 10px;
+  align-self: center;
+  justify-self: center;
+  
+}
+.bulbasaurTxt{
+  grid-area: bulbasaurTXT;
+  background-color: green;
+  border-bottom-left-radius: 10px ;
+  border-bottom-right-radius: 10px ;
+  align-self: center;
+  justify-self: center;
+}
 

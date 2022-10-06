@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import PokemonGrid from './PokemonGrid/PokemonGrid';
+import PokemonGrid from './COMPONENTS/PokemonGrid/PokemonGrid';
 
 function App() {
   return (
