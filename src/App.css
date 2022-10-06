@@ -60,19 +60,18 @@ h1{
   }
 
   /*Banco de Pokemons*/
-.containerBulbasaur{
+.containerGrass{
 display: grid;
 grid-template-areas: 
-'bulbasaur'
-'bulbasaurTXT';
+'grass'
+'grassTxt';
 grid-template-columns: 1fr;
 grid-template-rows: 80% 20%;
 border: 1px solid green;
 border-radius: 10px;
 
 }
-.bulbasaurGrid{
-  grid-area: bulbasaur;
+.grassGrid{
   height: 100px;
   width: 100px;
   background-color: white;
@@ -81,8 +80,8 @@ border-radius: 10px;
   justify-self: center;
   
 }
-.bulbasaurTxt{
-  grid-area: bulbasaurTXT;
+.grassTxt{
+  grid-area: grassTxt;
   background-color: green;
   border-bottom-left-radius: 10px ;
   border-bottom-right-radius: 10px ;
@@ -90,3 +89,22 @@ border-radius: 10px;
   justify-self: center;
 }
 
+.numberOfPokemon{
+  height: 15px;
+  width: 15px;
+}
+
+.pokemonImgOne{
+  grid-area: grass;
+  height: 100%;
+  width: 100%;
+}
+.grassImg{
+  height: 75%;
+  width: 75%;
+}
+/*.pokemonImgOne > img {
+  max-width: 200px;
+  min-height: 200px;
+}
+*/
