@@ -52,52 +52,54 @@ h1{
 
 .pokemonView{
     display: grid;
+    grid-template-areas: 
+    'grass puto puto2'
+    'puto3 puto4 puto5'
+    'puto6 puto7 puto8';
     grid-template-columns: 1fr  1fr 1fr;
     grid-template-rows: 1fr 1fr  1fr;
-    height: 60%;
+    height: 50%;
     width: 100%;
     background-color: white;
+    margin-top: 15px;
   }
 
   /*Banco de Pokemons*/
+
 .containerGrass{
-display: grid;
-grid-template-areas: 
-'grass'
-'grassTxt';
-grid-template-columns: 1fr;
-grid-template-rows: 80% 20%;
-border: 1px solid green;
-border-radius: 10px;
+  grid-area: grass;
+  display: grid;
+  grid-template-areas:
+  'number' 
+  'grass'
+  'grassTxt';
+  grid-template-columns: 1fr;
+  grid-template-rows: 12% 68% 20%;
+  border: 1px solid green;
+  border-radius: 10px;
 
 }
-.grassGrid{
-  height: 100px;
-  width: 100px;
-  background-color: white;
-  border-radius: 10px;
-  align-self: center;
-  justify-self: center;
-  
-}
-.grassTxt{
+.pokemonTxtOne{
   grid-area: grassTxt;
   background-color: green;
   border-bottom-left-radius: 10px ;
   border-bottom-right-radius: 10px ;
-  align-self: center;
-  justify-self: center;
+  text-align: center;
+  padding-top: 5px;
 }
-
 .numberOfPokemon{
+  grid-area: number;
   height: 15px;
   width: 15px;
+  padding-left: 78px;
 }
 
 .pokemonImgOne{
   grid-area: grass;
   height: 100%;
   width: 100%;
+  text-align: center;
+  padding-top: 11px;
 }
 .grassImg{
   height: 75%;
@@ -108,3 +110,17 @@ border-radius: 10px;
   min-height: 200px;
 }
 */
+/*segundo pokemon*/
+.containerPuto{
+  grid-area: puto;
+  display: grid;
+  grid-template-areas:
+  'number' 
+  'grass'
+  'grassTxt';
+  grid-template-columns: 1fr;
+  grid-template-rows: 12% 68% 20%;
+  border: 1px solid green;
+  border-radius: 10px;
+
+}
