@@ -111,19 +111,6 @@ h1{
 }
 */
 /*segundo pokemon*/
-.containerPuto{
-  grid-area: puto;
-  display: grid;
-  grid-template-areas:
-  'number' 
-  'grass'
-  'grassTxt';
-  grid-template-columns: 1fr;
-  grid-template-rows: 12% 68% 20%;
-  border: 1px solid green;
-  border-radius: 10px;
-
-}
 
 
 /* SearchBar - Input */

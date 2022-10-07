@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const RenderCartas= () =>{
 
-    const [pokemonsBank,setPokemonsBank] = useState()
+    const [pokemonsBank,setPokemonsBank] = useState([])
 
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const RenderCartas= () =>{
         
     <React.Fragment>
 
-        {(!pokemonsBank)?<p>cargando...</p>:pokemonsBank.map((pokemon, number) =>{
+        {pokemonsBank.map((pokemon, number) =>{
 
             return(
                 <div key={number}>
