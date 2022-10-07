@@ -53,9 +53,9 @@ h1{
 .pokemonView{
     display: grid;
     grid-template-areas: 
-    'grass puto puto2'
-    'puto3 puto4 puto5'
-    'puto6 puto7 puto8';
+    'pokemon pokemon pokemon'
+    'pokemon pokemon pokemon'
+    'pokemon pokemon pokemon';
     grid-template-columns: 1fr  1fr 1fr;
     grid-template-rows: 1fr 1fr  1fr;
     height: 50%;
@@ -65,13 +65,12 @@ h1{
   }
 
   /*Banco de Pokemons*/
-
-.containerGrass{
-  grid-area: grass;
+.containerPokemon{
+  grid-area: pokemon;
   display: grid;
   grid-template-areas:
   'number' 
-  'grass'
+  'pokemonImg'
   'grassTxt';
   grid-template-columns: 1fr;
   grid-template-rows: 12% 68% 20%;
@@ -79,6 +78,9 @@ h1{
   border-radius: 10px;
 
 }
+
+/* texto carta pokemon */
+
 .pokemonTxtOne{
   grid-area: grassTxt;
   border-bottom-left-radius: 10px ;
@@ -86,6 +88,8 @@ h1{
   text-align: center;
   padding-top: 5px;
 }
+
+/* colores por nombre de tipo */
 
 .Grass-title{
   background-color: #74CB48;
@@ -122,6 +126,7 @@ h1{
 .Normal-title{
   background-color: #AAA67F;
 }
+/* numero pokemon */
 
 .numberOfPokemon{
   grid-area: number;
@@ -130,6 +135,8 @@ h1{
   padding-left: 78px;
 }
 
+/* img pokemon */
+
 .pokemonImgOne{
   grid-area: grass;
   height: 100%;
@@ -137,10 +144,14 @@ h1{
   text-align: center;
   padding-top: 11px;
 }
-.grassImg{
+
+/* imagen carta */
+
+.pokemonImg{
   height: 75%;
   width: 75%;
 }
+
 /*.pokemonImgOne > img {
   max-width: 200px;
   min-height: 200px;
