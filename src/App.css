@@ -88,11 +88,39 @@ h1{
 }
 
 .Grass-title{
-  background-color: green;
+  background-color: #74CB48;
 }
 
 .Bug-title{
-  background-color: purple;
+  background-color: #A78723;
+}
+
+.Steel-title{
+  background-color: #8789B0;
+}
+
+.Fire-title{
+  background-color: #F57D31;
+}
+
+.Ghost-title{
+  background-color: #70559B;
+}
+
+.Psychic-title{
+  background-color: #FB5584;
+}
+
+.Electric-title{
+  background-color: #F9CF30;
+}
+
+.Water-title{
+  background-color: #6493EB;
+}
+
+.Normal-title{
+  background-color: #AAA67F;
 }
 
 .numberOfPokemon{
