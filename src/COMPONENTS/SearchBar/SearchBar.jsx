@@ -10,7 +10,7 @@ return (
             placeholder={'🔎 Buscar'}
             pattern={'[A-Za-z0-9- ]+'}
             title={'Only letters, numbers, and hypens are accepted'}
-            spellcheck={'false'}
+            /*spellcheck={'false'}*/
         />
     </form>
 )
