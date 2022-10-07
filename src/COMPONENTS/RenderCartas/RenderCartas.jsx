@@ -29,9 +29,9 @@ const RenderCartas= () =>{
                         <span>{pokemon.number}</span>
                     </div>
                     <div className="pokemonImgOne">
-                        <img className="grassImg" src="/Iconos-imagenes/bulbasaur.png" alt="pokemons"/>
+                        <img className="grassImg" src={`/Iconos-imagenes/${pokemon.name.toLowerCase()}.png`} alt="pokemons"/>
                     </div>
-                    <div className="pokemonTxtOne">
+                    <div className={`pokemonTxtOne ${pokemon.types[0]}-title`}>
                         <span className="grassTxt">{pokemon.name}</span>
                     </div>    
                 </div>

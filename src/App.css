@@ -81,12 +81,20 @@ h1{
 }
 .pokemonTxtOne{
   grid-area: grassTxt;
-  background-color: green;
   border-bottom-left-radius: 10px ;
   border-bottom-right-radius: 10px ;
   text-align: center;
   padding-top: 5px;
 }
+
+.Grass-title{
+  background-color: green;
+}
+
+.Bug-title{
+  background-color: purple;
+}
+
 .numberOfPokemon{
   grid-area: number;
   height: 15px;
