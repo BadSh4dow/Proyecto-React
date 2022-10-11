@@ -13,9 +13,9 @@ const PokemonDetail = () =>{
                 </div>  
                 <div className="pokemonWH">
                     <span>Wheight</span>
-                    <img src="/Imagenes-iconos/Weight.svg"/>
+                    <img src={`/Iconos-imagenes/Weight.svg`} alt="pokemons"/>
                     <span>Height</span>
-                    <img src="/Imagenes-iconos/Height.svg"/>
+                    <img src={`/Iconos-imagenes/Height.svg`} alt="pokemons"/>
                     <span>Moves</span>
                 </div>    
                 <p>There is a plant seed on its back right from the days this Pokémon is a bom. The seed slowly grows larger</p>
@@ -32,7 +32,6 @@ const PokemonDetail = () =>{
                 </div>
             
             </div>
-
 
         </div>
 

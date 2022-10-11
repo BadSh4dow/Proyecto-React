@@ -62,6 +62,7 @@ h1{
     width: 100%;
     background-color: white;
     margin-top: 15px;
+
   }
 
   /*Banco de Pokemons*/
@@ -86,14 +87,16 @@ h1{
   border-bottom-left-radius: 10px ;
   border-bottom-right-radius: 10px ;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 5px;;
 }
 
 /* colores por nombre de tipo */
 
 .Grass-title{
   background-color: #74CB48;
+  
 }
+
 
 .Bug-title{
   background-color: #A78723;
@@ -132,25 +135,17 @@ h1{
   grid-area: number;
   height: 15px;
   width: 15px;
-  padding-left: 68px;
+  padding-left: 78px;
 }
 
 /* img pokemon */
 
 .pokemonImgOne{
   grid-area: grass;
-  height: 60%;
+  height: 100%;
   width: 100%;
   text-align: center;
   padding-top: 11px;
-}
-.grassImg{
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.pokemonContainer{
-  padding: 5px;
 }
 
 /* imagen carta */
@@ -158,6 +153,7 @@ h1{
 .pokemonImg{
   height: 75%;
   width: 75%;
+  text-align: end;
 }
 
 /*.pokemonImgOne > img {
@@ -165,6 +161,8 @@ h1{
   min-height: 200px;
 }
 */
+/*segundo pokemon*/
+
 
 /* SearchBar - Input */
 
@@ -175,3 +173,17 @@ h1{
   text-align: center;
 
 }
+
+/* Carta pokemon details */
+
+.BackgroundcolorGreen{
+ display: grid;
+}
+
+.pokemonDetails{
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+
+}
+
