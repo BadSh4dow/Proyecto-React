@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import ArrowFilter from './COMPONENTS/ArrowFilter/ArrowFilter';
 import PokemonGrid from './COMPONENTS/PokemonGrid/PokemonGrid';
 import SearchBar from './COMPONENTS/SearchBar/SearchBar';
 
 function App() {
+  
+  const [searchValue, setSearchValue] = useState("")
+  const [sortByNumber, setSortByNumber] = useState(true)
+  
+  
   return (
     <main>
       <nav className="navBar">
@@ -12,18 +18,21 @@ function App() {
         </div>
 
         <h1>Pokédex</h1>
+        <SearchBar 
+        searchValue={searchValue}
+        setSearchValue = {setSearchValue}
+        />
 
-        <div className="searchBar">
-          <SearchBar/>
-        </div>
-
-        <div className= "arrowFilter">
-          <span>#</span> 
-            <img src="/Iconos-imagenes/Arrow.svg"/>
-        </div>
+        <ArrowFilter
+          sortByNumber={sortByNumber}
+          setSortByNumber = {setSortByNumber}
+        />
 
       </nav>
-      <PokemonGrid/>
+      <PokemonGrid
+      sortByNumber={sortByNumber}
+      searchValue={searchValue}
+       />
     </main>
   
   );
