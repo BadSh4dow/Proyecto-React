@@ -269,31 +269,24 @@ h1{
 
 .pokemonType{
   grid-area: pokemonType;
-  display: grid;
-  grid-template-areas: 
-  'typeA typeB';
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .typeA{
-  grid: typeA;
-  height: 20px;
-  width: 40%;
+  width: 20%;
   border-radius: 26px;
   background-color: green;
-  margin-left: auto;
-  margin-top: 20px;
+  margin-right: 5px;
 }
 
 .typeB{
-  grid: typeB;
-  height: 20px;
-  width: 40%;
+  width: 20%;
   border-radius: 26px;
   background-color: violet;
-  margin-right: auto;
-  margin-top: 20px;;
+  margin-left: 5px;
 }
 .about{
   grid-area: about;
