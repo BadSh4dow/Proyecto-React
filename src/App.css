@@ -216,7 +216,6 @@ h1{
 }
 .arrowD{
   grid-area: arrowD;
-  transform: rotate(90deg);
   justify-self: center;
   align-self: center;
   font-weight: bold;
@@ -291,11 +290,30 @@ h1{
 .about{
   grid-area: about;
   justify-self: center;
-  display: grid;
 }
 .pokemonWH{
   grid-area: pokemonWH;
+  display: grid;
+  grid-template-areas: 
+  'weigthh bar1 heightt bar2 moves';
+  grid-template-columns:  30% 5% 30% 5% 30% ;
+  grid-template-rows: 1fr;
 }
+.weight{
+  grid-area: weigthh;
+  justify-self: center;
+}
+.height{
+  grid-area: heightt;
+  justify-self: center;
+}
+
+.moves{
+  grid-area: moves;
+  justify-self: center;
+}
+
+
 .detailText{
   grid-area: detailText;
 }

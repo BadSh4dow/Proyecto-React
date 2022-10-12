@@ -8,7 +8,7 @@ const PokemonDetail = () =>{
                     <div className="navDetail">
                         <span className="nameD">Bulbasaur</span>
                         <span className="numberD">#001</span> 
-                        <img className="arrowD" src="/Iconos-imagenes/Arrow.svg"/>
+                        <img className="arrowD" src=""/>
                     </div>
                     <img className="imgDetail" src={`/Iconos-imagenes/bulbasaur.png`} alt="pokemons"/>
                 </div>
@@ -23,12 +23,20 @@ const PokemonDetail = () =>{
                     </div>
                     <span className="about">About</span>  
                     <div className="pokemonWH">
-                        <span>Wheight</span>
-                        <img src={`/Iconos-imagenes/Weight.svg`} alt="pokemons"/>
-                        <span>Height</span>
-                        <img src={`/Iconos-imagenes/Height.svg`} alt="pokemons"/>
-                        <span>Moves</span>
-                    </div>    
+                        <div className="weight">    
+                            <span>Wheight</span>
+                            <img src={`/Iconos-imagenes/Weight.svg`} alt="pokemons"/>
+                        </div>
+                        <img src={`/Iconos-imagenes/arrow-left.svg`} />
+                        <div className="height"> 
+                            <span>Height</span>
+                            <img src={`/Iconos-imagenes/Height.svg`} alt="pokemons"/>
+                        </div>
+                        <div className="moves"> 
+                            <span>Moves</span>
+                        </div>
+                    </div>
+                        
                     <span className="detailText">There is a plant seed on its back right from the days this Pokémon is a bom. The seed slowly grows larger</span>
                     <span className="baseStats">Base Stats</span>
                     <div className="pokemonStats">
