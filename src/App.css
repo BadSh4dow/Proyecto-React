@@ -176,14 +176,38 @@ h1{
 
 /* Carta pokemon details */
 
+.pokeDetalle{
+  height: 100vh;
+  width: 100%;
+  background: orange;
+
+}
+
 .BackgroundcolorGreen{
  display: grid;
+ background: blue;
+ grid-template-areas:
+ 'vista'
+ 'details';
+ grid-template-columns: 1fr;
+ grid-template-rows: 1fr 1fr;
+ height: 100%;
+ width: 100%;
+
+}
+
+.pokemonVista{
+  grid-area: vista;
+  height: 30%;
+  width: 100%;
 }
 
 .pokemonDetails{
-  display: grid;
-  height: 100vh;
-  width: 100vw;
+  grid-area: details;
+  background: yellow;
+  margin: 10px;
+  border-radius: 10px;
+  height: 70%;
+  width: 100%;
 
 }
-
