@@ -246,19 +246,29 @@ h1{
 }
 
 .pokemonDetails{
+  display: grid;
+  grid-template-areas:
+      'pokemonType'
+      'about'
+      'pokemonWH'
+      'detailText'
+      'baseStats'
+      'pokemonStats';
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 7.5% 20% 15% 7.5% 40%;
   background: white;
   grid-area: details;
   border-radius: 10px;
-  height: 83%;
-  width: 71%;
+  height: 95%;
+  width: 94%;
   margin: 10px;
-  padding: 43px;
   border-width: 1px;
   border-style: solid;
   border-color: black;
 }
 
 .pokemonType{
+  grid-area: pokemonType;
   display: grid;
   grid-template-areas: 
   'typeA typeB';
@@ -285,4 +295,22 @@ h1{
   margin-right: auto;
   margin-top: 20px;;
 }
+.about{
+  grid-area: about;
+}
+.pokemonWH{
+  grid-area: pokemonWH;
+}
+.detailText{
+  grid-area: detailText;
+}
+.baseStats{
+  grid-area: baseStats;
+}
+.pokemonStats{
+  grid-area: pokemonStats;
+}
+
+
+
 
