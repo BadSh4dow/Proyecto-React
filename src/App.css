@@ -196,9 +196,54 @@ h1{
 }
 
 .pokemonVista{
-  grid-area: vista;
-  height: 30%;
+  height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-areas: 
+  'navDetail'
+  'img';
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+  grid-area: vista;
+  
+}
+.navDetail{
+  grid-area: navDetail;
+  display: grid;
+  grid-template-areas: 
+  'arrowD nameD numberD';
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 1fr;
+}
+.arrowD{
+  grid-area: arrowD;
+  transform: rotate(90deg);
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+  width: auto;
+  height: 30px;
+
+}
+.nameD{
+  grid-area: nameD;
+  justify-self: center;
+  align-self: center;
+  padding-right: 150px;
+  font-size: x-large;
+  font-weight: bold;
+}
+.numberD{
+  grid-area: numberD;
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+}
+.imgDetail{
+  grid-area: img;
+  justify-self: center;
+  z-index: 1;
+  padding-top: 60px;
 }
 
 .pokemonDetails{

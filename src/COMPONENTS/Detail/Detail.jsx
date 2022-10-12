@@ -5,10 +5,12 @@ const PokemonDetail = () =>{
         <div className="pokeDetalle">
             <div className="BackgroundcolorGreen">
                 <div className="pokemonVista">
-                    <span>Bulbasaur</span>
-                    <span>#001</span>
-                    <img src="/Iconos-imagenes/Arrow.svg"/>
-                    <img src={`/Iconos-imagenes/aron.png`} alt="pokemons"/>
+                    <div className="navDetail">
+                        <span className="nameD">Bulbasaur</span>
+                        <span className="numberD">#001</span> 
+                        <img className="arrowD" src="/Iconos-imagenes/Arrow.svg"/>
+                    </div>
+                    <img className="imgDetail" src={`/Iconos-imagenes/aron.png`} alt="pokemons"/>
                 </div>
                 <div className="pokemonDetails">
                     <div className="pokemonType">
