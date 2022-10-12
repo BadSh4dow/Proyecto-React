@@ -8,7 +8,7 @@ const PokemonDetail = () =>{
                     <div className="navDetail">
                         <span className="nameD">Bulbasaur</span>
                         <span className="numberD">#001</span> 
-                        <img className="arrowD" src=""/>
+                        <img className="arrowD" src="/Iconos-imagenes/arrow-left.svg"/>
                     </div>
                     <img className="imgDetail" src={`/Iconos-imagenes/bulbasaur.png`} alt="pokemons"/>
                 </div>
@@ -27,7 +27,7 @@ const PokemonDetail = () =>{
                             <span>Wheight</span>
                             <img src={`/Iconos-imagenes/Weight.svg`} alt="pokemons"/>
                         </div>
-                        <img src={`/Iconos-imagenes/arrow-left.svg`} />
+                        
                         <div className="height"> 
                             <span>Height</span>
                             <img src={`/Iconos-imagenes/Height.svg`} alt="pokemons"/>
