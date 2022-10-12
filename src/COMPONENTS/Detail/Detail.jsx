@@ -10,7 +10,7 @@ const PokemonDetail = () =>{
                         <span className="numberD">#001</span> 
                         <img className="arrowD" src="/Iconos-imagenes/Arrow.svg"/>
                     </div>
-                    <img className="imgDetail" src={`/Iconos-imagenes/aron.png`} alt="pokemons"/>
+                    <img className="imgDetail" src={`/Iconos-imagenes/bulbasaur.png`} alt="pokemons"/>
                 </div>
                 <div className="pokemonDetails">
                     <div className="pokemonType">

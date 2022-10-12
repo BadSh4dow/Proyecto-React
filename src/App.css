@@ -250,7 +250,11 @@ h1{
   background: white;
   grid-area: details;
   border-radius: 10px;
-  height: 97%;
-  width: 95%;
+  height: 81%;
+  width: 71%;
   margin: 10px;
+  padding: 43px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
 }
