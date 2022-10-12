@@ -183,16 +183,15 @@ h1{
 }
 
 .BackgroundcolorGreen{
- background:lightgreen;
- display: grid;
- grid-template-areas:
- 'vista'
- 'details';
- grid-template-columns: 1fr;
- grid-template-rows: 30% 70%;
- height: 100%;
- width: 100%;
-
+  background: lightgreen;
+  display: grid;
+  grid-template-areas:
+      'vista'
+      'details';
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+  height: 100%;
+  width: 100%;
 }
 
 .pokemonVista{
@@ -243,14 +242,14 @@ h1{
   grid-area: img;
   justify-self: center;
   z-index: 1;
-  padding-top: 60px;
+  padding-top: 15px;
 }
 
 .pokemonDetails{
   background: white;
   grid-area: details;
   border-radius: 10px;
-  height: 81%;
+  height: 83%;
   width: 71%;
   margin: 10px;
   padding: 43px;
@@ -258,3 +257,32 @@ h1{
   border-style: solid;
   border-color: black;
 }
+
+.pokemonType{
+  display: grid;
+  grid-template-areas: 
+  'typeA typeB';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.typeA{
+  grid: typeA;
+  height: 20px;
+  width: 40%;
+  border-radius: 26px;
+  background-color: green;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.typeB{
+  grid: typeB;
+  height: 20px;
+  width: 40%;
+  border-radius: 26px;
+  background-color: violet;
+  margin-right: auto;
+  margin-top: 20px;;
+}
+

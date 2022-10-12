@@ -14,8 +14,12 @@ const PokemonDetail = () =>{
                 </div>
                 <div className="pokemonDetails">
                     <div className="pokemonType">
-                        <span>Grass</span>
-                        <span>Poison</span>
+                        <div className="typeA">
+                            <span>Grass</span>
+                        </div>
+                        <div className="typeB">
+                            <span>Poison</span>
+                        </div>
                     </div>  
                     <div className="pokemonWH">
                         <span>Wheight</span>
