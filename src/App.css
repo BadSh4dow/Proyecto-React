@@ -290,6 +290,7 @@ h1{
 }
 .about{
   grid-area: about;
+  justify-self: center;
 }
 .pokemonWH{
   grid-area: pokemonWH;
