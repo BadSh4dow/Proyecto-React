@@ -1,6 +1,9 @@
 import React from "react";
+import ProgressBar from "../ProgressBar/progressBar";
 
 const PokemonDetail = () =>{
+
+    
     return(
         <div className="pokeDetalle">
             <div className="BackgroundcolorGreen">
@@ -39,6 +42,8 @@ const PokemonDetail = () =>{
                         
                     <span className="detailText">There is a plant seed on its back right from the days this Pokémon is a bom. The seed slowly grows larger</span>
                     <span className="baseStats">Base Stats</span>
+                    
+                   {/* 
                     <div className="pokemonStats">
                         <div>
                             <ul>HP...</ul>
@@ -50,6 +55,11 @@ const PokemonDetail = () =>{
                             Barra Verde
                         </div>
                     </div>
+                    */}
+
+                    <ProgressBar completed={60} bgColor={'#43FF00'}>
+                        
+                    </ProgressBar>
                 
                 </div>
 
