@@ -141,9 +141,9 @@ h1{
 /* img pokemon */
 
 .pokemonImgOne{
-  grid-area: grass;
-  height: 100%;
-  width: 100%;
+  grid-area: pokemonImg;
+  height: 75%;
+  width: 75%;
   text-align: center;
   padding-top: 11px;
 }
@@ -156,11 +156,11 @@ h1{
   text-align: end;
 }
 
-/*.pokemonImgOne > img {
-  max-width: 200px;
-  min-height: 200px;
+.pokemonImgOne > img {
+  max-width: 100px;
+  min-height: 100px;
 }
-*/
+
 /*segundo pokemon*/
 
 
@@ -299,11 +299,11 @@ h1{
   grid-template-columns:  30% 5% 30% 5% 30% ;
   grid-template-rows: 1fr;
 }
-.weight{
+.weightt{
   grid-area: weigthh;
   justify-self: center;
 }
-.height{
+.heightt{
   grid-area: heightt;
   justify-self: center;
 }

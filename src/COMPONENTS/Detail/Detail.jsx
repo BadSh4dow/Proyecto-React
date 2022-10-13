@@ -29,12 +29,12 @@ const PokemonDetail = () =>{
                     </div>
                     <span className="about">About</span>  
                     <div className="pokemonWH">
-                        <div className="weight">    
+                        <div className="weightt">    
                             <span>Wheight</span>
                             <img src={`/Iconos-imagenes/Weight.svg`} alt="pokemons"/>
                         </div>
                         
-                        <div className="height"> 
+                        <div className="heightt"> 
                             <span>Height</span>
                             <img src={`/Iconos-imagenes/Height.svg`} alt="pokemons"/>
                         </div>
