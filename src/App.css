@@ -183,7 +183,7 @@ h1{
 }
 
 .BackgroundcolorGreen{
-  background: lightgreen;
+  background: #74CB48;
   display: grid;
   grid-template-areas:
       'vista'
@@ -254,7 +254,7 @@ h1{
       'baseStats'
       'pokemonStats';
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 7.5% 20% 15% 7.5% 40%;
+  grid-template-rows: 15% 7.5% 15% 15% 7.5% 50%;
   background: white;
   grid-area: details;
   border-radius: 10px;
@@ -277,14 +277,14 @@ h1{
 .typeA{
   width: 20%;
   border-radius: 26px;
-  background-color: green;
+  background-color:#74CB48;
   margin-right: 5px;
 }
 
 .typeB{
   width: 20%;
   border-radius: 26px;
-  background-color: violet;
+  background-color: #FB5584;
   margin-left: 5px;
 }
 .about{
@@ -322,6 +322,9 @@ h1{
 }
 .pokemonStats{
   grid-area: pokemonStats;
+  display: flex;
+  flex-direction: column;
+  place-content: space-evenly;
 }
 
 

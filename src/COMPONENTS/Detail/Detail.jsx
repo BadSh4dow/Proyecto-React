@@ -43,23 +43,20 @@ const PokemonDetail = () =>{
                     <span className="detailText">There is a plant seed on its back right from the days this Pokémon is a bom. The seed slowly grows larger</span>
                     <span className="baseStats">Base Stats</span>
                     
-                   {/* 
+                    
                     <div className="pokemonStats">
-                        <div>
-                            <ul>HP...</ul>
-                        </div>
-                        <div>
-                            <ul>60...</ul>
-                        </div>
-                        <div>
-                            Barra Verde
-                        </div>
+                    <ProgressBar completed={60} bgcolor={'#74CB48'}/>
+                    <ProgressBar completed={50} bgcolor={'#74CB48'}/>
+                    <ProgressBar completed={10} bgcolor={'#74CB48'}/>
+                    <ProgressBar completed={35} bgcolor={'#74CB48'}/>
+                    <ProgressBar completed={45} bgcolor={'#74CB48'}/>
+                    <ProgressBar completed={25} bgcolor={'#74CB48'}/>
                     </div>
-                    */}
+                    
 
-                    <ProgressBar completed={60} bgColor={'#43FF00'}>
+
                         
-                    </ProgressBar>
+                    
                 
                 </div>
 
