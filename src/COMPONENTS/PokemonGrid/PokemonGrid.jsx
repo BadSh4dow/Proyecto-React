@@ -1,4 +1,5 @@
 import React, {useState,useEffect} from "react";
+import {Link} from 'react-router-dom'
 
  const PokemonGrid = (props)=>{
 
@@ -32,6 +33,7 @@ import React, {useState,useEffect} from "react";
         }).filter((pokemon)=>pokemon.name.toLowerCase().includes(props.searchValue.toLowerCase())).map((pokemon, number) =>{
 
         return(
+            <Link to={"/"+pokemon.number}>
             <div className="pokemonContainer" key={number}>
                 <div className="numberOfPokemon">
                     <span>#{addZero(pokemon.number)}</span>
@@ -43,6 +45,7 @@ import React, {useState,useEffect} from "react";
                     <span className="grassTxt">{pokemon.name}</span>
                 </div>    
             </div>
+            </Link>
         )
         })}
     </div> 
