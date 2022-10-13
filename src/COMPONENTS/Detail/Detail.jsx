@@ -1,5 +1,6 @@
 import React from "react";
 import ProgressBar from "../ProgressBar/progressBar";
+import {Link} from 'react-router-dom'
 
 const PokemonDetail = () =>{
 
@@ -10,8 +11,10 @@ const PokemonDetail = () =>{
                 <div className="pokemonVista">
                     <div className="navDetail">
                         <span className="nameD">Bulbasaur</span>
-                        <span className="numberD">#001</span> 
-                        <img className="arrowD" src="/Iconos-imagenes/arrow-left.svg"/>
+                        <span className="numberD">#001</span>
+                        <Link to={"/"}>
+                            <img  className="arrowD" src="/Iconos-imagenes/arrow-left.svg"/>
+                        </Link> 
                     </div>
                     <img className="imgDetail" src={`/Iconos-imagenes/bulbasaur.png`} alt="pokemons"/>
                 </div>
