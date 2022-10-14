@@ -32,7 +32,6 @@ const PokemonDetail = () =>{
       mapColors.set("Electric", "#F9CF30")
       mapColors.set("Water", "#6493EB")
 
-
     
     return(
         <div className="pokeDetalle">
@@ -82,12 +81,12 @@ const PokemonDetail = () =>{
                         
                         
                         <div className="pokemonStats">
-                        <ProgressBar completed={60} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={50} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={10} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={35} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={45} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={25} bgcolor={mapColors.get(pokemon.types[0])}/>
+                        <ProgressBar completed={pokemon.stats.hp} bgcolor={mapColors.get(pokemon.types[0])}/>
+                        <ProgressBar completed={pokemon.stats.atk} bgcolor={mapColors.get(pokemon.types[0])}/>
+                        <ProgressBar completed={pokemon.stats.def} bgcolor={mapColors.get(pokemon.types[0])}/>
+                        <ProgressBar completed={pokemon.stats.satk} bgcolor={mapColors.get(pokemon.types[0])}/>
+                        <ProgressBar completed={pokemon.stats.sdef} bgcolor={mapColors.get(pokemon.types[0])}/>
+                        <ProgressBar completed={pokemon.stats.spd} bgcolor={mapColors.get(pokemon.types[0])}/>
                         </div>
                         
     
