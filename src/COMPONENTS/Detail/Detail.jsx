@@ -59,7 +59,7 @@ const PokemonDetail = () =>{
                                 <span>{`${pokemon.types[1]}`}</span>
                             </div>
                         </div>
-                        <span className="about">About</span>  
+                        <span className="about">About Puto</span>  
                         <div className="pokemonWH">
                             <div className="weightt">    
                                 <div className="imgAndW">
