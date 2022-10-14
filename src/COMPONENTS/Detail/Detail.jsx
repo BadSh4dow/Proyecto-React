@@ -84,16 +84,36 @@ const PokemonDetail = () =>{
                             
                         <span className="detailText">There is a plant seed on its back right from the days this Pokémon is a bom. The seed slowly grows larger</span>
                         <span className="baseStats">Base Stats</span>
-                        
-                        
-                        <div className="pokemonStats">
-                        <ProgressBar completed={pokemon.stats.hp} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={pokemon.stats.atk} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={pokemon.stats.def} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={pokemon.stats.satk} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={pokemon.stats.sdef} bgcolor={mapColors.get(pokemon.types[0])}/>
-                        <ProgressBar completed={pokemon.stats.spd} bgcolor={mapColors.get(pokemon.types[0])}/>
+
+                        <div className="statsGrid">
+                            <div className="statsNames">
+                                <p>HP</p>
+                                <p>ATK</p>
+                                <p>DEF</p>
+                                <p>SATK</p>
+                                <p>SDEF</p>
+                                <p>SPD</p>
+                            </div>
+                            <div className="statsNumbers">
+                                <p>{pokemon.stats.hp}</p>
+                                <p>{pokemon.stats.atk}</p>
+                                <p>{pokemon.stats.def}</p>
+                                <p>{pokemon.stats.satk}</p>
+                                <p>{pokemon.stats.sdef}</p>
+                                <p>{pokemon.stats.spd}</p>
+                            </div>
+                            <div className="pokemonStats">
+                            <ProgressBar completed={pokemon.stats.hp} bgcolor={mapColors.get(pokemon.types[0])}/>
+                            <ProgressBar completed={pokemon.stats.atk} bgcolor={mapColors.get(pokemon.types[0])}/>
+                            <ProgressBar completed={pokemon.stats.def} bgcolor={mapColors.get(pokemon.types[0])}/>
+                            <ProgressBar completed={pokemon.stats.satk} bgcolor={mapColors.get(pokemon.types[0])}/>
+                            <ProgressBar completed={pokemon.stats.sdef} bgcolor={mapColors.get(pokemon.types[0])}/>
+                            <ProgressBar completed={pokemon.stats.spd} bgcolor={mapColors.get(pokemon.types[0])}/>
+                            </div>
+
                         </div>
+
+                        
                         
     
     

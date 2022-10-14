@@ -351,11 +351,33 @@ h1{
   grid-area: baseStats;
 }
 .pokemonStats{
-  grid-area: pokemonStats;
   display: flex;
   flex-direction: column;
   place-content: space-evenly;
+  height: 80%;
 }
+.statsGrid{
+  grid-area: pokemonStats;
+  display: grid;
+  grid-template-areas: 
+  'statsNames statsNumbers pokemonStats';
+  grid-template-columns: 12.5% 12.5% 75%;
+  grid-template-rows: 100%;
+  margin-left: 16px;
+}
+.statsNames{
+  grid-area: statsNames;
+  font-size: 16px;
+  text-align-last: center;
+}
+.statsNumbers{
+  grid-area: statsNumbers;
+  text-align-last: center;
+}
+.pokemonStats{
+  grid-area: pokemonStats;
+}
+
 
 
 
