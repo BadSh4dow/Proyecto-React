@@ -15,18 +15,20 @@ main{
   height: 11%;
   background-color: white;
 }
+
 .pokeball{
   grid-area: pokeball;
   display: flex;
   justify-content: center;
   align-self: center;
 }
+
 .pokeball img{
   height: 30px;
   width: 30px;
   padding-left: 12px;
-
 }
+
 h1{
   grid-area: titulo;
   height: auto;
@@ -36,6 +38,7 @@ h1{
   align-self: center;
   padding-right: 160px;
 }
+
 .arrowFilter{
   grid-area: arrow;
   height: auto;
@@ -44,6 +47,7 @@ h1{
   justify-content: center;
   align-self: center;
 }
+
 .searchBar{
   grid-area: search;
   align-self: center;
@@ -62,7 +66,6 @@ h1{
     width: 100%;
     background-color: white;
     margin-top: 15px;
-
   }
 
   /*Banco de Pokemons*/
@@ -127,6 +130,19 @@ h1{
 .Normal-title{
   background-color: #AAA67F;
 }
+
+.Poison-title{
+  background-color: #A43E9E
+}
+
+.Rock-title{
+  background-color: #B69E31;
+}
+
+.Flying-title{
+  background-color: #A891EC;
+}
+
 /* numero pokemon */
 
 .numberOfPokemon{
@@ -181,7 +197,6 @@ h1{
 }
 
 .backgroundCard{
-  
   display: grid;
   grid-template-areas:
       'vista'
@@ -202,8 +217,15 @@ h1{
   grid-template-columns: 1fr;
   grid-template-rows: 25% 75%;
   grid-area: vista;
-  
 }
+
+.pokeFoto{
+filter: opacity(0.2) drop-shadow(0px 0px 0px rgb(255, 255, 255));
+margin-left: 172px;
+display: grid;
+margin-top: -205px;
+}
+
 .navDetail{
   grid-area: navDetail;
   display: grid;
@@ -260,8 +282,6 @@ h1{
   width: 94%;
   margin: 10px;
   border-width: 1px;
-  border-style: solid;
-  border-color: black;
 }
 
 .pokemonType{
@@ -270,24 +290,24 @@ h1{
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: bold;
 }
 
 .typeA{
   width: 20%;
   border-radius: 26px;
-  background-color:#74CB48;
   margin-right: 5px;
 }
 
 .typeB{
   width: 20%;
   border-radius: 26px;
-  background-color: #FB5584;
   margin-left: 5px;
 }
 .about{
   grid-area: about;
   justify-self: center;
+  font-weight: bold;
 }
 .pokemonWH{
   grid-area: pokemonWH;
@@ -327,6 +347,7 @@ h1{
 }
 .imgAndH img{
   width: 12px;
+  font-weight: bold;
 }
 .heightt span{
   text-align: -webkit-center;
@@ -338,17 +359,39 @@ h1{
 .moves{
   grid-area: moves;
   justify-self: center;
-  font-size: small;
   display: inline-grid;
   justify-items: center;
 }
 
+.pokemonMoves{
+  text-align: left;
+}
+
+.movesSpan{
+  text-align: center;
+  margin-bottom: 29px;
+  font-size: small;
+}
+
+.movesOne{
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.movesOne{
+  text-align: left;
+  margin-top: 10px;
+}
 
 .detailText{
   grid-area: detailText;
+  text-align: center;
+  align-self: center;
 }
 .baseStats{
   grid-area: baseStats;
+  font-weight: bold;
+  text-align: center;
 }
 .pokemonStats{
   display: flex;
@@ -369,16 +412,15 @@ h1{
   grid-area: statsNames;
   font-size: 16px;
   text-align-last: center;
+  font-weight: bold;
 }
 .statsNumbers{
   grid-area: statsNumbers;
   text-align-last: center;
+  font-weight: bold;
 }
 .pokemonStats{
   grid-area: pokemonStats;
 }
-
-
-
 
 

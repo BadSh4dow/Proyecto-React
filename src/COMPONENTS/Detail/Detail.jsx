@@ -40,6 +40,7 @@ const PokemonDetail = () =>{
                 (
                     <div className={`backgroundCard ${pokemon.types[0]}-title`}>
                     <div className="pokemonVista">
+                            <img className="pokeFoto" src="/Iconos-imagenes/Pokeball.png"/>
                         <div className="navDetail">
                             <span className="nameD">{pokemon.name}</span>
                             <span className="numberD">#{addZero(pokemon.number)}</span>
@@ -51,11 +52,11 @@ const PokemonDetail = () =>{
                     </div>
                     <div className="pokemonDetails">
                         <div className="pokemonType">
-                            <div className="typeA">
-                                <span>{`${pokemon.types[0]}-title`}</span>
+                            <div className={`typeA ${pokemon.types[0]}-title`}>
+                                <span>{`${pokemon.types[0]}`}</span>
                             </div>
-                            <div className="typeB">
-                                <span>{`${pokemon.types[0]}-title`}</span>
+                            <div className={`typeB ${pokemon.types[1]}-title`}>
+                                <span>{`${pokemon.types[1]}`}</span>
                             </div>
                         </div>
                         <span className="about">About</span>  
@@ -76,13 +77,16 @@ const PokemonDetail = () =>{
                                 <span>Height</span>
                             </div>
                             <div className="moves"> 
-                                <span>{pokemon.moves[0]}</span>
-                                <span>{pokemon.moves[1]}</span>
-                                <span>Moves</span>
+                                <div className="pokemonMoves">
+                                    <span className="moveOne">{pokemon.moves[0]}</span>
+                                    <span className="moveTwo">{pokemon.moves[1]}</span>
+                                </div>
+                                
+                                <span className="movesSpan">Moves</span>
                             </div>
                         </div>
                             
-                        <span className="detailText">There is a plant seed on its back right from the days this Pokémon is a bom. The seed slowly grows larger</span>
+                        <span className="detailText">{pokemon.description}</span>
                         <span className="baseStats">Base Stats</span>
 
                         <div className="statsGrid">
