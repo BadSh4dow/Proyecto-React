@@ -96,8 +96,6 @@ h1{
   background-color: #74CB48;
   
 }
-
-
 .Bug-title{
   background-color: #A78723;
 }
@@ -182,8 +180,8 @@ h1{
 
 }
 
-.BackgroundcolorGreen{
-  background: #74CB48;
+.backgroundCard{
+  
   display: grid;
   grid-template-areas:
       'vista'

@@ -11,7 +11,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home/>}></Route>
               <Route path="/:id" element={<PokemonDetail/>}></Route>
-              <Route path="/" element={<Detail/>}></Route>
+             
             </Routes>
     </BrowserRouter>
   );
