@@ -61,18 +61,24 @@ const PokemonDetail = () =>{
                         <span className="about">About</span>  
                         <div className="pokemonWH">
                             <div className="weightt">    
+                                <div className="imgAndW">
+                                    <img src={`/Iconos-imagenes/Weight.svg`} alt="pokemons"/>
+                                    <p>{(pokemon.weight)}kg</p>
+                                </div>
                                 <span>Wheight</span>
-                                <img src={`/Iconos-imagenes/Weight.svg`} alt="pokemons"/>
-                                <span>{(pokemon.weight)}</span>
                             </div>
                             
-                            <div className="heightt"> 
+                            <div className="heightt">
+                                <div className="imgAndH">
+                                    <img src={`/Iconos-imagenes/Height.svg`} alt="pokemons"/>
+                                    <p>{(pokemon.height)}m</p>
+                                </div> 
                                 <span>Height</span>
-                                <img src={`/Iconos-imagenes/Height.svg`} alt="pokemons"/>
-                                <span>{(pokemon.height)}</span>
                             </div>
                             <div className="moves"> 
-                                <span>{pokemon.moves}</span>
+                                <span>{pokemon.moves[0]}</span>
+                                <span>{pokemon.moves[1]}</span>
+                                <span>Moves</span>
                             </div>
                         </div>
                             

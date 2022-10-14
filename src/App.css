@@ -299,16 +299,48 @@ h1{
 }
 .weightt{
   grid-area: weigthh;
-  justify-self: center;
+  display: inherit;
 }
+.imgAndW{
+  display: inline-flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.imgAndW img{
+  width: 20px;
+}
+.weightt span{
+  text-align: -webkit-center;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: small;
+}
+
 .heightt{
   grid-area: heightt;
-  justify-self: center;
+  display: inherit;
+}
+.imgAndH{
+  display: inline-flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.imgAndH img{
+  width: 12px;
+}
+.heightt span{
+  text-align: -webkit-center;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: small;
 }
 
 .moves{
   grid-area: moves;
   justify-self: center;
+  font-size: small;
+  display: inline-grid;
+  justify-items: center;
 }
 
 
