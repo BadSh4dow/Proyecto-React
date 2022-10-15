@@ -78,7 +78,8 @@ h1{
   'grassTxt';
   grid-template-columns: 1fr;
   grid-template-rows: 12% 68% 20%;
-  border-radius: 10px;
+  border-radius: 15px;
+  background-color: white !important;
 }
 
 /* texto carta pokemon */
@@ -89,11 +90,111 @@ h1{
   border-bottom-right-radius: 10px ;
   text-align: center;
   padding-top: 5px;;
+  color: white !important;
+
 }
+
+.grass{
+  background-color: #74cb48;
+  border: solid #74cb48;
+  color: #74cb48;
+}
+
+.psychic{
+  background-color: #fb5584;
+  border: solid #fb5584;
+  color: #fb5584;
+}
+.water{
+  background-color: #6493eb;
+  border: solid #6493eb;
+  color: #6493eb;
+}
+.steel{
+  background-color: #b7b9d0;
+  border: solid #b7b9d0;
+  color: #b7b9d0;
+}
+.ghost{
+  background-color: #70559b;
+  border: solid #70559b;
+  color: #70559b;
+}
+.rock{
+  background-color: #b69e31;
+  border: solid #b69e31;
+  color: #b69e31;
+}
+.normal{
+  background-color: #aaa67f;
+  border: solid #aaa67f;
+  color: #aaa67f;
+}
+.fighting{
+  background-color: #c12239;
+  border: solid #c12239;
+  color: #c12239;
+}
+.flying{
+  background-color: #a891ec;
+  border: solid #a891ec;
+  color: #a891ec;
+}
+.poison{
+  background-color: #a43e9e;
+  border: solid #a43e9e;
+  color: #a43e9e;
+}
+.ground{
+  background-color: #dec16b;
+  border: solid #dec16b;
+  color: #dec16b;
+}
+.bug{
+  background-color: #a78723;
+  border: solid #a78723;
+  color: #a78723;
+}
+.fire{
+  background-color: #f57d31;
+  border: solid #f57d31;
+  color: #f57d31;
+}
+.electric{
+  background-color: #f9cf30;
+  border: solid #f9cf30;
+  color: #f9cf30;
+}
+.dragon{
+  background-color: #7037ff;
+  border: solid #7037ff;
+  color: #7037ff;
+}
+.fairy{
+  background-color: #e69eac;
+  border: solid #e69eac;
+  color: #e69eac;
+}
+.dark{
+  background-color: #75574c;
+  border: solid #75574c;
+  color: #75574c;
+}
+.ice{
+  background-color: #9ad6df;
+  border: solid #9ad6df;
+  color: #9ad6df;
+}
+.type{
+  background-color: #242829;
+  border: solid #242829;
+  color: #242829;
+}
+
 
 /* colores por nombre de tipo */
 
-.Grass-title{
+/*.Grass-title{
   background-color: #74CB48;
   
 }
@@ -105,8 +206,9 @@ h1{
   background-color: #8789B0;
 }
 
-.Fire-title{
+.Fire{
   background-color: #F57D31;
+  border: solid #F57D31;
 }
 
 .Ghost-title{
@@ -140,6 +242,8 @@ h1{
 .Flying-title{
   background-color: #A891EC;
 }
+*/
+
 
 /* numero pokemon */
 
@@ -191,6 +295,17 @@ h1{
 .pokeDetalle{
   height: 104vh;
   width: 110%;
+}
+.arrowLeft{
+  transform: rotate(-180deg);
+  height: 30px;
+  width: 30px;
+  margin-left: 40px;
+  margin-top: -70px;
+}
+.arrowRight{
+  height: 30px;
+  width: 30px;
 
 }
 
@@ -202,7 +317,7 @@ h1{
   grid-template-columns: 1fr;
   grid-template-rows: 25% 75%;
   height: 100%;
-  width: 100%;
+  width: 90%;
 }
 
 .pokemonVista{
@@ -240,7 +355,7 @@ margin-top: -205px;
   width: auto;
   height: 30px;
   margin-top: 18px;
-  margin-left: 24px;
+  margin-left: 5px;
   filter: invert();
   /*
   -webkit-filter: grayscale(1);
@@ -266,7 +381,6 @@ margin-top: -205px;
   align-self: center;
   font-weight: bold;
   margin-top: 9px;
-  margin-right: 40px;
   z-index: 1;
   color: white;
 
@@ -305,19 +419,18 @@ margin-top: -205px;
   align-items: center;
   text-align: center;
   font-weight: bold;
+  
+}
+.Types{
+  color: white !important;
+  border-radius: 1rem;
+  margin: 6px;
+  height: 22%;
+  width: 20%;
+  
 }
 
-.typeA{
-  width: 20%;
-  border-radius: 26px;
-  margin-right: 5px;
-}
 
-.typeB{
-  width: 20%;
-  border-radius: 26px;
-  margin-left: 5px;
-}
 .about{
   grid-area: about;
   justify-self: center;
@@ -419,7 +532,7 @@ margin-top: -205px;
   grid-template-areas: 
   'statsNames statsNumbers pokemonStats';
   grid-template-columns: 12.5% 12.5% 75%;
-  grid-template-rows: 100%;
+  grid-template-rows: 1fr;
   margin-left: 16px;
 }
 .statsNames{
@@ -432,10 +545,13 @@ margin-top: -205px;
   grid-area: statsNumbers;
   text-align-last: center;
   font-weight: bold;
-  border-left: #000 1px solid;
 }
 .pokemonStats{
   grid-area: pokemonStats;
+}
+.hijoDePuta{
+  transform: rotate(90deg);
+
 }
 
 

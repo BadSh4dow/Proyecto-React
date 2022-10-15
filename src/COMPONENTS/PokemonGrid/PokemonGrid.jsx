@@ -35,15 +35,16 @@ import {Link} from 'react-router-dom'
 
             
         return(
-            <Link to={"/"+pokemon.number}>
-            <div className="pokemonContainer" key={number} style={{border: '1px solid', borderRadius: '10px'}}>
+            <Link to={"/"+pokemon.number} style={{ textDecoration: 'none' }}>
+            <div className={`containerPokemon ${pokemon.types[0].toLowerCase()}`} key={number}>
                 <div className="numberOfPokemon">
                     <span>#{addZero(pokemon.number)}</span>
                 </div>
                 <div className="pokemonImgOne">
                     <img className="grassImg" src={`/Iconos-imagenes/${pokemon.name.toLowerCase()}.png`} alt="pokemons"/>
                 </div>
-                <div className={`pokemonTxtOne ${pokemon.types[0]}-title`}>
+                <div className={`pokemonTxtOne ${pokemon.types[0].toLowerCase()}`}
+>
                     <span className="grassTxt">{pokemon.name}</span>
                 </div>    
             </div>

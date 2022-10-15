@@ -38,7 +38,7 @@ const PokemonDetail = () =>{
             {
                 pokemon &&
                 (
-                    <div className={`backgroundCard ${pokemon.types[0]}-title`}>
+                    <div className= {`backgroundCard ${pokemon.types[0].toLowerCase()}`}>
                     <div className="pokemonVista">
                             <img className="pokeFoto" src="/Iconos-imagenes/Pokeball.png"/>
                         <div className="navDetail">
@@ -48,17 +48,20 @@ const PokemonDetail = () =>{
                                 <img  className="arrowD" src="/Iconos-imagenes/arrow-left.svg"/>
                             </Link> 
                         </div>
+                        <div className="arrowRight"><img className="arrowRight" src="/Iconos-imagenes/Frame.svg"/></div>
                         <img className="imgDetail" src={`/Iconos-imagenes/${pokemon.name.toLowerCase()}.png`} alt="pokemons"/>
+                        <div className="arrowLeft"><img src="/Iconos-imagenes/Frame.svg"/></div>
                     </div>
                     <div className="pokemonDetails">
-                        <div className="pokemonType">
-                            <div className={`typeA ${pokemon.types[0]}-title`}>
-                                <span>{`${pokemon.types[0]}`}</span>
-                            </div>
-                            <div className={`typeB ${pokemon.types[1]}-title`}>
-                                <span>{`${pokemon.types[1]}`}</span>
-                            </div>
-                        </div>
+                    <div className="pokemonType">
+                            {
+                                pokemon.types.map((types)=>{
+                                    return (<div className={`Types ${types.toLowerCase()}`}>
+                                {types}
+                            </div>)
+                                })
+                            }
+                    </div>
                         <span className="about">About</span>  
                         <div className="pokemonWH">
                             <hr></hr>
@@ -99,7 +102,7 @@ const PokemonDetail = () =>{
                                 <p>SDEF</p>
                                 <p>SPD</p>
                             </div>
-                            
+                            <hr className="hijoDePuta"></hr>
                             <div className="statsNumbers">
                                 <p>{pokemon.stats.hp}</p>
                                 <p>{pokemon.stats.atk}</p>
