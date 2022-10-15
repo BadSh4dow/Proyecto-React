@@ -6,6 +6,10 @@ import { useState } from "react";
 const PokemonDetail = () =>{
     const [pokemon,setPokemon] = useState()
     const id = useParams().id
+    
+    /*const previousPokemon = props.list[props.list.findIndex((pokemon)=>pokemon.id==id)-1]
+    const nextPokemon = props.list[props.list.findIndex((pokemon)=>pokemon.id==id)+1]*/
+
 
     function addZero(number){
         return number.toString().padStart(3,"0")  
@@ -48,7 +52,7 @@ const PokemonDetail = () =>{
                                 <img  className="arrowD" src="/Iconos-imagenes/arrow-left.svg"/>
                             </Link> 
                         </div>
-                        <div className="arrowRight"><img className="arrowRight" src="/Iconos-imagenes/Frame.svg"/></div>
+                        <div className="arrowRight"><img src="/Iconos-imagenes/Frame.svg"/></div>
                         <img className="imgDetail" src={`/Iconos-imagenes/${pokemon.name.toLowerCase()}.png`} alt="pokemons"/>
                         <div className="arrowLeft"><img src="/Iconos-imagenes/Frame.svg"/></div>
                     </div>
@@ -102,7 +106,7 @@ const PokemonDetail = () =>{
                                 <p>SDEF</p>
                                 <p>SPD</p>
                             </div>
-                            <hr className="hijoDePuta"></hr>
+                            
                             <div className="statsNumbers">
                                 <p>{pokemon.stats.hp}</p>
                                 <p>{pokemon.stats.atk}</p>
