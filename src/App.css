@@ -497,6 +497,10 @@ margin-top: -205px;
 
 .pokemonMoves{
   text-align: left;
+  display: grid;
+  grid-template-areas:
+  'moveOne'
+  'moveTwo' 
 }
 
 .movesSpan{
