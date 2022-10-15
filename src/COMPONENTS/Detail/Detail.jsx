@@ -59,8 +59,9 @@ const PokemonDetail = () =>{
                                 <span>{`${pokemon.types[1]}`}</span>
                             </div>
                         </div>
-                        <span className="about">About Puto</span>  
+                        <span className="about">About</span>  
                         <div className="pokemonWH">
+                            <hr></hr>
                             <div className="weightt">    
                                 <div className="imgAndW">
                                     <img src={`/Iconos-imagenes/Weight.svg`} alt="pokemons"/>
@@ -68,7 +69,7 @@ const PokemonDetail = () =>{
                                 </div>
                                 <span>Wheight</span>
                             </div>
-                            
+                            <hr></hr>
                             <div className="heightt">
                                 <div className="imgAndH">
                                     <img src={`/Iconos-imagenes/Height.svg`} alt="pokemons"/>
@@ -98,6 +99,7 @@ const PokemonDetail = () =>{
                                 <p>SDEF</p>
                                 <p>SPD</p>
                             </div>
+                            
                             <div className="statsNumbers">
                                 <p>{pokemon.stats.hp}</p>
                                 <p>{pokemon.stats.atk}</p>

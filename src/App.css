@@ -78,9 +78,7 @@ h1{
   'grassTxt';
   grid-template-columns: 1fr;
   grid-template-rows: 12% 68% 20%;
-  border: 1px solid green;
   border-radius: 10px;
-
 }
 
 /* texto carta pokemon */
@@ -191,8 +189,8 @@ h1{
 /* Carta pokemon details */
 
 .pokeDetalle{
-  height: 100vh;
-  width: 100%;;
+  height: 104vh;
+  width: 110%;
 
 }
 
@@ -241,6 +239,14 @@ margin-top: -205px;
   font-weight: bold;
   width: auto;
   height: 30px;
+  margin-top: 18px;
+  margin-left: 24px;
+  filter: invert();
+  /*
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  */
+
 
 }
 .nameD{
@@ -250,12 +256,20 @@ margin-top: -205px;
   padding-right: 150px;
   font-size: x-large;
   font-weight: bold;
+  margin-top: 9px;
+  color: white;
+
 }
 .numberD{
   grid-area: numberD;
   justify-self: center;
   align-self: center;
   font-weight: bold;
+  margin-top: 9px;
+  margin-right: 40px;
+  z-index: 1;
+  color: white;
+
 }
 .imgDetail{
   grid-area: img;
@@ -418,6 +432,7 @@ margin-top: -205px;
   grid-area: statsNumbers;
   text-align-last: center;
   font-weight: bold;
+  border-left: #000 1px solid;
 }
 .pokemonStats{
   grid-area: pokemonStats;

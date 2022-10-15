@@ -32,9 +32,11 @@ import {Link} from 'react-router-dom'
             }
         }).filter((pokemon)=>pokemon.name.toLowerCase().includes(props.searchValue.toLowerCase())).map((pokemon, number) =>{
 
+
+            
         return(
             <Link to={"/"+pokemon.number}>
-            <div className="pokemonContainer" key={number}>
+            <div className="pokemonContainer" key={number} style={{border: '1px solid', borderRadius: '10px'}}>
                 <div className="numberOfPokemon">
                     <span>#{addZero(pokemon.number)}</span>
                 </div>
