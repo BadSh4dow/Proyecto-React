@@ -7,10 +7,7 @@ const PokemonDetail = () =>{
     const [pokemon,setPokemon] = useState()
     const id = useParams().id
     
-    /*const previousPokemon = props.list[props.list.findIndex((pokemon)=>pokemon.id==id)-1]
-    const nextPokemon = props.list[props.list.findIndex((pokemon)=>pokemon.id==id)+1]*/
-
-
+    
     function addZero(number){
         return number.toString().padStart(3,"0")  
     }

@@ -550,7 +550,8 @@ margin-top: -205px;
   font-size: 16px;
   text-align-last: center;
   font-weight: bold;
-  
+  height: 70%;
+  margin-top: 5px;
 }
 .statsNumbers{
   grid-area: statsNumbers;
@@ -560,6 +561,7 @@ margin-top: -205px;
   height: 70%;
   border: 2%;
   color: black !important;
+  margin-top: 5px;
 }
 .pokemonStats{
   grid-area: pokemonStats;
